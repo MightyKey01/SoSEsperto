@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Helloworld</string>
+    <string-array name="voci">
+        <item></item>
+        <item>Home</item>
+        <item>Annunci</item>
+        <item>Esperti</item>
+    </string-array>
+</resources>
