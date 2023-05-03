@@ -6,4 +6,19 @@
         <item>Annunci</item>
         <item>Esperti</item>
     </string-array>
+
+    <string-array name="campo">
+        <item>Elettricista</item>
+        <item>Muratore</item>
+        <item>Badante</item>
+        <item>Babysitter</item>
+    </string-array>
+
+    <string-array name="km">
+        <item>2 km</item>
+        <item>5 km</item>
+        <item>10 km</item>
+        <item>15 km</item>
+        <item>20 km</item>
+    </string-array>
 </resources>

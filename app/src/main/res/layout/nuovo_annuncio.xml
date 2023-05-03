@@ -6,25 +6,12 @@
     android:layout_height="match_parent">
 
     <Button
-        android:id="@+id/button5"
-        style="@style/Widget.Material3.Button"
-        android:layout_width="148dp"
-        android:layout_height="58dp"
-        android:layout_marginStart="53dp"
-        android:layout_marginBottom="16dp"
-        android:backgroundTint="#03A9F4"
-        android:text="Salva"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
         android:id="@+id/button2"
         style="@style/Widget.Material3.Button"
         android:layout_width="152dp"
         android:layout_height="58dp"
-        android:layout_marginEnd="7dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="20dp"
         android:backgroundTint="#03A9F4"
         android:text="Pubblica"
         android:textSize="16sp"
@@ -47,13 +34,14 @@
         android:layout_width="294dp"
         android:layout_height="54dp"
         android:layout_marginStart="50dp"
+        android:layout_marginTop="54dp"
         android:layout_marginEnd="50dp"
-        android:layout_marginBottom="27dp"
         android:text="Emergenza"
         android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/button5"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.117"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner3" />
 
     <TextView
         android:id="@+id/textView4"
@@ -97,16 +85,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
 
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="257dp"
-        android:layout_height="129dp"
-        android:layout_marginStart="77dp"
-        android:layout_marginTop="54dp"
-        android:text="select per il ramo "
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
-
     <Spinner
         android:id="@+id/spinner"
         android:layout_width="56dp"
@@ -129,5 +107,27 @@
         app:layout_constraintEnd_toEndOf="@+id/toolbar"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/icons8_user_24" />
+
+    <Spinner
+        android:id="@+id/spinner3"
+        android:layout_width="299dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="22dp"
+        android:entries="@array/campo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPostalAddress" />
+
+    <EditText
+        android:id="@+id/editTextTextPostalAddress"
+        android:layout_width="305dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="21dp"
+        android:ems="10"
+        android:inputType="textPostalAddress"
+        android:text="Indirizzo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
