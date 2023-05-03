@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/white">
 
     <ImageView
         android:id="@+id/logo2"
@@ -37,67 +38,6 @@
         app:layout_constraintStart_toEndOf="@+id/logo2"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
-    <EditText
-        android:id="@+id/nomeTxtRe"
-        android:layout_width="291dp"
-        android:layout_height="54dp"
-        android:layout_marginStart="63dp"
-        android:layout_marginTop="7dp"
-        android:ems="10"
-        android:hint="Nome"
-        android:inputType="textPersonName"
-        android:textSize="14sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/logo2" />
-
-    <EditText
-        android:id="@+id/cognomeTxtRe"
-        android:layout_width="291dp"
-        android:layout_height="54dp"
-        android:layout_marginStart="63dp"
-        android:ems="10"
-        android:hint="Cognome"
-        android:inputType="textPersonName"
-        android:textSize="14sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nomeTxtRe" />
-
-    <EditText
-        android:id="@+id/cittaTxtRe"
-        android:layout_width="291dp"
-        android:layout_height="54dp"
-        android:layout_marginStart="63dp"
-        android:ems="10"
-        android:hint="Città di residenza"
-        android:inputType="textPersonName"
-        android:textSize="14sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextDate" />
-
-    <EditText
-        android:id="@+id/provinciaTxtRe"
-        android:layout_width="291dp"
-        android:layout_height="54dp"
-        android:layout_marginStart="63dp"
-        android:ems="10"
-        android:hint="Provincia"
-        android:inputType="textPersonName"
-        android:textSize="14sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cittaTxtRe" />
-
-    <EditText
-        android:id="@+id/emailTxtRe"
-        android:layout_width="291dp"
-        android:layout_height="54dp"
-        android:layout_marginStart="63dp"
-        android:ems="10"
-        android:hint="Email"
-        android:inputType="textPersonName"
-        android:textSize="14sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cognomeTxtRe" />
-
     <Button
         android:id="@+id/registratiBtnRe"
         style="@style/Widget.Material3.Button"
@@ -111,50 +51,124 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
-    <EditText
-        android:id="@+id/passwordTxtRe"
-        android:layout_width="291dp"
-        android:layout_height="53dp"
-        android:layout_marginStart="63dp"
-        android:ems="10"
-        android:hint="Password"
-        android:inputType="textPassword"
-        android:textSize="14sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/provinciaTxtRe" />
-
-    <EditText
-        android:id="@+id/cpasswordTxtRe"
-        android:layout_width="291dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="63dp"
-        android:ems="10"
-        android:hint="Conferma password"
-        android:inputType="textPassword"
-        android:textSize="14sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/passwordTxtRe" />
-
     <CheckBox
         android:id="@+id/privacyCB"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="63dp"
-        android:layout_marginTop="18dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="7dp"
         android:text="Ho letto l'informativa sulla privacy"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cpasswordTxtRe" />
+        app:layout_constraintTop_toBottomOf="@+id/nestedScrollView" />
 
-    <EditText
-        android:id="@+id/editTextDate"
-        android:layout_width="291dp"
-        android:layout_height="52dp"
-        android:layout_marginStart="63dp"
-        android:ems="10"
-        android:hint="Data di Nascita"
-        android:inputType="date"
-        android:textSize="14sp"
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="409dp"
+        android:layout_height="434dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="7dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toTopOf="@+id/privacyCB"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/emailTxtRe" />
+        app:layout_constraintTop_toBottomOf="@+id/logo2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/nomeTxtRe"
+                android:layout_width="291dp"
+                android:layout_height="54dp"
+                android:layout_marginStart="63dp"
+                android:layout_marginTop="7dp"
+                android:ems="10"
+                android:hint="Nome"
+                android:inputType="textPersonName"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/cognomeTxtRe"
+                android:layout_width="291dp"
+                android:layout_height="54dp"
+                android:layout_marginStart="63dp"
+                android:ems="10"
+                android:hint="Cognome"
+                android:inputType="textPersonName"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/telTxtRe"
+                android:layout_width="292dp"
+                android:layout_height="54dp"
+                android:layout_marginStart="63dp"
+                android:ems="10"
+                android:hint="Numero di Telefono"
+                android:inputType="textPersonName"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/cittaTxtRe"
+                android:layout_width="291dp"
+                android:layout_height="54dp"
+                android:layout_marginStart="63dp"
+                android:ems="10"
+                android:hint="Città di residenza"
+                android:inputType="textPersonName"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/provinciaTxtRe"
+                android:layout_width="291dp"
+                android:layout_height="54dp"
+                android:layout_marginStart="63dp"
+                android:ems="10"
+                android:hint="Provincia"
+                android:inputType="textPersonName"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/emailTxtRe"
+                android:layout_width="291dp"
+                android:layout_height="54dp"
+                android:layout_marginStart="63dp"
+                android:ems="10"
+                android:hint="Email"
+                android:inputType="textPersonName"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/editTextDate"
+                android:layout_width="291dp"
+                android:layout_height="52dp"
+                android:layout_marginStart="63dp"
+                android:ems="10"
+                android:hint="Data di Nascita"
+                android:inputType="date"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/passwordTxtRe"
+                android:layout_width="291dp"
+                android:layout_height="53dp"
+                android:layout_marginStart="63dp"
+                android:ems="10"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/cpasswordTxtRe"
+                android:layout_width="291dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="63dp"
+                android:ems="10"
+                android:hint="Conferma password"
+                android:inputType="textPassword"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
