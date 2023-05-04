@@ -97,7 +97,7 @@
                 app:cardCornerRadius="10dp"
                 app:cardElevation="4dp">
 
-                <include layout="@layout/esperto_card" />
+                <include layout="@layout/esperto_card_accept" />
 
             </androidx.cardview.widget.CardView>
 
@@ -109,7 +109,7 @@
                 app:cardCornerRadius="10dp"
                 app:cardElevation="4dp">
 
-                <include layout="@layout/esperto_card" />
+                <include layout="@layout/esperto_card_accept" />
 
             </androidx.cardview.widget.CardView>
 
@@ -121,7 +121,7 @@
                 app:cardCornerRadius="10dp"
                 app:cardElevation="4dp">
 
-                <include layout="@layout/esperto_card" />
+                <include layout="@layout/esperto_card_accept" />
 
             </androidx.cardview.widget.CardView>
         </LinearLayout>
