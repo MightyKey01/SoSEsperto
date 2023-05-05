@@ -2,9 +2,10 @@
     <string name="app_name">Helloworld</string>
     <string-array name="voci">
         <item></item>
-        <item>Home</item>
+        <item>I miei annunci</item>
         <item>Annunci</item>
         <item>Esperti</item>
+        <item>Diventa Esperto</item>
     </string-array>
 
     <string-array name="campo">
