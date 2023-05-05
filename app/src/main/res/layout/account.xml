@@ -196,10 +196,12 @@
         android:id="@+id/textView33"
         android:layout_width="195dp"
         android:layout_height="29dp"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="29dp"
         android:text="Gestisci il tuo profilo"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textSize="21sp"
-        tools:layout_editor_absoluteX="108dp"
-        tools:layout_editor_absoluteY="89dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
