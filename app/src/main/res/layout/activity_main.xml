@@ -31,19 +31,20 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/emailTxt" />
+        app:layout_constraintTop_toBottomOf="@+id/emailTxt"/>
 
     <EditText
         android:id="@+id/emailTxt"
         android:layout_width="273dp"
         android:layout_height="61dp"
         android:layout_marginStart="101dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="72dp"
         android:layout_marginEnd="100dp"
         android:ems="10"
         android:hint="Email"
         android:inputType="textEmailAddress"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/logoIv" />
 
@@ -71,6 +72,19 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
+    <Button
+        android:id="@+id/registratiBtn2"
+        style="@style/Widget.Material3.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#2196F3"
+        android:text="Accedi dopo"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
     <ImageView
         android:id="@+id/logoIv"
         android:layout_width="297dp"
@@ -87,8 +101,8 @@
         android:id="@+id/passdimLbl"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="101dp"
-        android:layout_marginBottom="32dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginBottom="28dp"
         android:text="Password dimenticata?"
         android:textStyle="italic"
         app:layout_constraintBottom_toBottomOf="parent"

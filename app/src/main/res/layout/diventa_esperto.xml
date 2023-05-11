@@ -108,19 +108,11 @@
         android:background="@drawable/icons8_menu_rounded_30"
         android:backgroundTint="@color/black"
         android:contentDescription="menu"
+        android:entries="@array/vociEsperto"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageButton
-        android:id="@+id/imageButton4"
-        android:layout_width="64dp"
-        android:layout_height="55dp"
-        android:layout_marginTop="4dp"
-        android:backgroundTint="#00FFFFFF"
-        android:contentDescription="usericon"
-        app:layout_constraintEnd_toEndOf="@+id/toolbar"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/icons8_user_24" />
+
 
     <EditText
         android:id="@+id/editTextPhone"

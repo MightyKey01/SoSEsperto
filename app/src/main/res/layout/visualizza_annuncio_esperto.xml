@@ -39,6 +39,7 @@
         android:background="@drawable/icons8_menu_rounded_30"
         android:backgroundTint="@color/black"
         android:contentDescription="menu"
+        android:entries="@array/vociEsperto"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -51,7 +52,7 @@
         android:contentDescription="usericon"
         app:layout_constraintEnd_toEndOf="@+id/toolbar"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/icons8_user_24" />
+        app:srcCompat="@drawable/icona_lavoratore" />
 
     <TextView
         android:id="@+id/textView7"

@@ -26,7 +26,7 @@
         android:background="@drawable/icons8_menu_rounded_30"
         android:backgroundTint="@color/black"
         android:contentDescription="menu"
-        android:entries="@array/voci"
+        android:entries="@array/vociUtente"
         android:popupBackground="@color/material_dynamic_primary60"
         android:spinnerMode="dropdown"
         android:visibility="visible"

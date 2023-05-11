@@ -1,11 +1,17 @@
 <resources>
-    <string name="app_name">Helloworld</string>
-    <string-array name="voci">
+    <string name="app_name">Sos Esperto</string>
+    <string-array name="vociUtente">
         <item></item>
         <item>I miei annunci</item>
-        <item>Annunci</item>
-        <item>Esperti</item>
-        <item>Diventa Esperto</item>
+        <item>Esperti vicini a te</item>
+        <item>Account Esperto</item>
+    </string-array>
+
+    <string-array name="vociEsperto">
+        <item></item>
+        <item>Le mia prenotazioni</item>
+        <item>Annunci vicini a te</item>
+        <item>Utente</item>
     </string-array>
 
     <string-array name="campo">

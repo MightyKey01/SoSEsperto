@@ -68,6 +68,7 @@
         android:background="@drawable/icons8_menu_rounded_30"
         android:backgroundTint="@color/black"
         android:contentDescription="menu"
+        android:entries="@array/vociUtente"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
